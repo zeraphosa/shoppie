@@ -48,7 +48,7 @@ img,
 span,
 input,
 button,
-.ion-icon {
+ion-icon {
   display: block;
 }
 
@@ -74,7 +74,7 @@ button {
 address {
   font-style: normal;
 }
-.ion-icon {
+ion-icon {
   pointer-events: none;
 }
 html {
@@ -87,4 +87,69 @@ body {
   color: var(--text-eerie-black-2);
   font-size: 1.6rem;
   line-height: 1.5;
+}
+
+.container {
+  padding-inline: 16px;
+}
+
+.navbar .btn {
+  display: none;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-block: 25px;
+  z-index: 2;
+}
+.header.active {
+  background-color: var(--bg-white);
+  box-shadow: var(--shadow-1);
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-open-btn {
+  font-size: 3.5rem;
+}
+.navbar {
+  position: absolute;
+  top: 85px;
+  left: 0;
+  right: 0;
+  background-color: var(--bg-white);
+  max-height: 0;
+  overflow: hidden;
+  visibility: hidden;
+  transition: var(--transition-2);
+}
+
+.navbar.active {
+  max-height: 310px;
+  visibility: visible;
+}
+
+.navbar-list {
+  padding-block-start: 15px;
+}
+.navbar-link,
+.card-btn, .span {
+  font-weight: var(--weight-semiBold);
+  text-transform: uppercase;
+}
+.navbar-link {
+  padding: 10px 20px;
+}
+.card-btn {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 25px 20px;
 }
