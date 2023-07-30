@@ -414,13 +414,66 @@ address.footer-text {
 .footer-bottom-link:is(:hover, :focus-visible) {
   color: var(--text-orange-crayola);
 }
-.copyright{
+.copyright {
   padding-block: 30px;
   font-size: var(--fontSize-8);
   text-align: center;
 }
-.footer .shape-1{
+.footer .shape-1 {
   display: block;
   top: 0;
   right: 0;
+}
+
+@media (min-width: 575px) {
+  .container {
+    max-width: 540px;
+    width: 100%;
+    margin-inline: auto;
+  }
+  .offer-card {
+    padding-inline: 50px;
+  }
+}
+@media (min-width: 768px) {
+  :root {
+    --fontSize-4: 4.2rem;
+    --fontSize-2: 7.8rem;
+    --fontSize-3: 6.6rem;
+  }
+  .container {
+    max-width: 720px;
+  }
+  .btn {
+    padding: 20px 50px;
+  }
+  .section {
+    padding-block: 150px;
+  }
+  .scrollbar-item {
+    min-width: calc(50% - 20px);
+  }
+  .product-btn {
+    padding: 15px 30px;
+  }
+  .hero {
+    padding-block: 200px 130px;
+  }
+  .hero-text {
+    --fontSize-8: 2.2rem;
+    line-height: 1.8;
+  }
+  .hero .btn {
+    margin-block-start: 50px;
+  }
+  .feature-list {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 24px;
+  }
+  .offer-card {
+    padding-inline: 90px;
+  }
+  .footer-top {
+    grid-template-columns: 1fr 1fr;
+  }
 }
