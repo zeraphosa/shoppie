@@ -96,6 +96,7 @@ body {
 }
 .shape {
   display: none;
+  position: absolute;
 }
 .title {
   font-family: var(--fontFamily-clashDisplay);
